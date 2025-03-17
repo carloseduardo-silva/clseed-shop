@@ -1,0 +1,617 @@
+.cartEscapeArea{
+    width: 100%;
+    height: 100vh;
+}
+
+.container_nav{
+    margin-bottom: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.desktop_nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: rgb(239, 239, 239);
+    align-items: center;
+    color: rgb(0, 0, 0);
+    padding: 0.55em;
+    font-size: 2.3em;
+    font-family: 'Schibsted Grotesk', sans-serif;
+
+
+}
+
+.utilities{
+   display: none;
+}
+
+.utilities_modal{
+    display: none;
+}
+
+.logo span{
+    color: rgb(0, 0, 0);
+    margin-left: -6.5px;
+    font-weight: bold;
+    
+}
+.logo{
+    margin-left: 0.7em;
+}
+
+.logo:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 250ms;
+
+}
+
+.container_icons{
+    display: flex;
+    align-items: center;
+    
+}
+
+.container_icons form{
+    display: flex;
+    align-items: center;
+}
+
+.container_icons button{
+    color: rgb(0, 0, 0);
+    margin: 2px 15px 0px 15px;
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
+ 
+
+}
+
+.container_icons button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 200ms;
+}
+
+.container_icons span{
+    color: rgb(0, 0, 0);
+    margin: 2px 17px 0px 17px;
+    font-size: 0.85em;
+
+}
+
+.container_icons span:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 200ms;
+}
+
+input.query{
+    display: none;
+}
+
+
+input.mobileQuery{
+    background-color: rgba(211, 211, 211, 0.704);
+    border-radius: 8px;
+    color: rgb(9, 9, 9);
+    border: grey;
+    width: 30vw;
+    padding: 1.55em 16px;
+    font-size: 0.75em;
+    margin: 2px;
+    max-width: 400px;
+
+}
+
+input.mobileQuery::placeholder{
+    color: rgb(70, 70, 70);
+    font-size: 1em;
+}
+
+a{
+    display: flex;
+}
+h4{
+    color: black;
+}
+
+
+
+.mobile_nav{
+    display: flex;
+    background-color: rgb(239, 239, 239);
+    color: rgb(0, 0, 0);
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 10px;
+    padding-top: 10px;
+    animation: slideFromLeft 500ms;
+    position: fixed;
+    top: 50%;
+    left: 30%;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    height: 100vh;
+    width: 60%;
+}
+
+.navMobile_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 1.5em 1em;
+
+}
+
+.navMobile_header span{
+    color: rgb(100,100,100);
+}
+
+.navMobile_header form{
+    display: flex;
+    align-items: center;
+}
+
+.navMobile_header button{
+    background-color: transparent;
+    color: rgb(100,100,100);
+    border: none;
+    display: inline-flex;
+    margin-left: -1.5em;
+}
+
+.navMobile_header span{
+    font-size: 2em;
+}
+
+.navMobile_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    width: 90%;
+    
+}
+
+.navMobile_card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.15em 0em;
+    border-bottom: 0.3px solid rgb(154, 154, 154);
+}
+
+.navMobile_card:hover{
+    color: rgb(100,100,100);
+    transition: 250ms;
+    cursor: pointer;
+}
+
+.utilities_Nav{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+   
+    width: 90%;
+    
+}
+
+.utilities_Nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 8px 4px;
+    border-bottom: 0.3px solid rgb(154, 154, 154);
+   
+   
+}
+
+.utilities_Nav ul a{
+    padding: 1em 2px;
+    color: rgb(0, 0, 0);
+    animation: NavUtilitiesSlide 750ms ;
+}
+
+.utilities_Nav ul a:hover{
+    cursor: pointer;
+    color: rgb(154, 154, 154);
+}
+
+.utilities_Nav p {
+    margin: 0px 0px 5px 6px;
+}
+
+
+
+.mobile_navShop{
+    display: flex;
+    background-color: rgb(239, 239, 239);
+    color: rgb(0, 0, 0);
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 10px;
+    animation: slideFromRight 500ms;
+    position: fixed;
+    top: 50%;
+    left: 75%;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    height: 100vh;
+    width: 50%;
+    padding: 12px;
+}
+
+
+.shop_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 2em 0em;
+}
+
+.shop_header span{
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+}
+
+.shop_itens{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: scroll;
+    width: 98%;
+    margin-bottom: 1em;
+  
+}
+
+.shop_itens::-webkit-scrollbar{
+    background-color: transparent;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    width: 10px;
+    height: 10px;
+}
+
+.shop_card{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding-bottom: 12px;
+    margin: 10px 0px;
+    width: 100%;
+
+
+}
+
+.shop_cardMain{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+
+
+
+}
+
+.shop_cardBtn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 1.1em;
+    margin-left: 3px;
+}
+
+.shop_cardBtn input{
+    width: 84px;
+    text-align: center;
+    
+}
+
+.shop_cardBtn a{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+.shop_cardBtn a:hover{
+    color: rgb(100, 100, 100);
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.card_info{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+  
+}
+
+.card_info p{
+    font-size: 14px;
+
+}
+
+
+
+.card_image img{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    
+}
+
+.shop_summary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.4em;
+    padding: 14px;
+}
+
+.shop_summary button{
+    font-size: 14px;
+    color: rgb(236, 236, 236);
+    background-color: rgb(9, 9, 9);
+    padding: 1.05em 2.35em;
+    border-radius: 18px;
+    border: black;
+
+}
+
+.shop_summary button:hover{
+    background-color: rgb(211, 211, 211);
+    color: rgb(0, 0, 0);
+    transition: 250ms;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+@media (max-width: 560px) {
+
+
+   
+
+    .navMobile_header{
+        flex-direction: column-reverse;
+        gap: 1.2em;
+       
+    }
+
+    .navMobile_header form{
+        width: 100%;
+    }
+
+    .navMobile_header span{
+        margin-left: 10px;
+    }
+
+    .container_icons button {
+        font-size: 0.9em;
+    }
+
+    .container_icons  span {
+        font-size: 0.9em;
+    }
+
+    input.mobileQuery{
+        width: 100%;
+        padding: 1.3em 16px;
+        font-size: 0.85em;
+        margin: 2px;
+        max-width: 400px;
+    
+    }
+
+    .card_info h4{
+        font-size: 1em;
+
+    }
+
+    .card_info p{
+        font-size: 13px;
+
+    }
+
+
+   }
+
+@media (min-width:825px) {
+
+
+    .utilities{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+    .utilities_card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        font-weight: 650;
+        
+    
+    }
+    .utilities_card:hover{
+        cursor: pointer;
+    }
+    
+    .utilities_card p {
+        font-size: 16px;
+    }
+
+    .utilities_card:hover{
+        color: rgb(168, 168, 168);
+        transition: 250ms;
+    }
+
+    .utilities_modal{
+        display: flex;
+        background-color: rgb(239, 239, 239);
+        color: rgb(0, 0, 0);
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        padding-right: 10px;
+        animation: fade 500ms;
+        position: fixed;
+        z-index: 5;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        padding: 0em 1.5em 1em 2.5em;
+        margin: 8.2em 3em 3em 5em;
+        border-radius: 3px;
+
+    }
+
+    .utilities_modal ul{
+        list-style: none;
+        
+    }
+
+    .utilities_modal a li{
+      padding: 1em;
+       
+    }
+
+    .utilities_modal a li {
+        color: rgb(0, 0, 0);
+    }
+
+    .utilities_modal a li:hover{
+        color: rgb(172, 172, 172);
+        transition: 250ms;
+    }
+
+    .mobile_nav{
+        width: 30%;
+        left: 85%;
+    }
+
+    .mobile_navShop{
+        width: 30%;
+        left: 85%;
+        padding: 10px;
+    }
+
+    
+    input.query{
+        display: flex;
+        background-color: rgba(211, 211, 211, 0.704);
+        border-radius: 8px;
+        color: rgb(9, 9, 9);
+        border: grey;
+        width: 50vw;
+        padding: 0.52em 16px;
+        font-size: 0.5em;
+        margin: 2px;
+        max-width: 400px;
+        animation: querySlide 500ms;
+    
+    }
+    
+    input.query::placeholder{
+        color: rgb(70, 70, 70);
+        font-size: 1em;
+    }
+
+    .mobile_nav{
+        display: none;
+    }
+
+    
+   }
+
+
+
+
+
+   @keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    
+   }
+
+   @keyframes querySlide {
+    from{
+        opacity: 0;
+        transform: translate(34%, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0%, 0);
+    }
+    
+   }
+
+   @keyframes slideFromRight {
+    from{
+      
+        transform: translate(0, -50%);
+    }
+    to{
+        
+        transform: translate(-50%, -50%);
+    }
+    
+   }
+
+   @keyframes slideFromLeft {
+    from{
+      
+        transform: translate(-100%, -50%);
+    }
+    to{
+        
+        transform: translate(-50%, -50%);
+    }
+    
+   }
+
+   @keyframes NavUtilitiesSlide {
+    from{
+      
+        transform: translate(0, -40%);
+    }
+    to{
+        
+        transform: translate(0%, 0%);
+    }
+    
+   }
