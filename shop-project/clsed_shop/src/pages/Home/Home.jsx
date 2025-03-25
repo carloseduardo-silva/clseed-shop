@@ -12,9 +12,6 @@ import Nav from '../../components/Nav'
 import { useFetchDatas } from '../../hooks/useFetchDatas'
 
 
-
-
-
 const Home = () => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -52,6 +49,7 @@ const Home = () => {
             },
         };
     
+    //carrousel de imagens banner home
     useEffect(() =>{
         setImagesArr(['https://cdn.vox-cdn.com/thumbor/Gzz0B3GqZRXvAqphlWA5pUifZGM=/88x0:1509x1066/1200x675/filters:focal(88x0:1509x1066)/cdn.vox-cdn.com/uploads/chorus_image/image/50128435/wmns9.0.0.jpg',
         "https://uncoverla.sfo3.digitaloceanspaces.com/wp-content/uploads/2019/10/29125942/fred-segal-stadium-goods-pop-up-west-hollywood_2019_10_02-scaled.jpg",
@@ -112,8 +110,6 @@ const Home = () => {
       
 
  
-    
-
   return (
     <>
         <Nav/>
@@ -164,9 +160,7 @@ const Home = () => {
             </div>
 
         </div>
-
-       
-        
+     
     
     </>
   )

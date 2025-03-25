@@ -39,6 +39,11 @@ footer {
   
 }
 
+.footer_container p{
+  font-size: 16px;
+  font-weight: normal;
+}
+
 .quantity{
   display:flex;
  

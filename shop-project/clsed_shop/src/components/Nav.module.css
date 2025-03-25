@@ -18,11 +18,9 @@
     background-color: rgb(239, 239, 239);
     align-items: center;
     color: rgb(0, 0, 0);
-    padding: 0.55em;
+    padding: 0.45em;
     font-size: 2.3em;
     font-family: 'Schibsted Grotesk', sans-serif;
-
-
 }
 
 .utilities{
@@ -40,7 +38,7 @@
     
 }
 .logo{
-    margin-left: 0.7em;
+    margin-left: 0.5em;
 }
 
 .logo:hover{
@@ -204,7 +202,6 @@ h4{
     flex-direction: column;
     align-items: start;
     justify-content: start;
-   
     width: 90%;
     
 }
@@ -452,7 +449,8 @@ h4{
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 12px;
+        gap: 25px;
+        margin-top: 2px;
     }
     .utilities_card{
         display: flex;
@@ -460,22 +458,20 @@ h4{
         align-items: center;
         justify-content: center;
         gap: 3px;
-        font-weight: 650;
-        
-    
+        font-weight: 630;
     }
+
     .utilities_card:hover{
         cursor: pointer;
+        color: rgb(146, 146, 146);
+        transition: 250ms;
+        transform: scale(1.02);
     }
     
     .utilities_card p {
         font-size: 16px;
     }
 
-    .utilities_card:hover{
-        color: rgb(168, 168, 168);
-        transition: 250ms;
-    }
 
     .utilities_modal{
         display: flex;

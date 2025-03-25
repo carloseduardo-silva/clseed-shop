@@ -16,8 +16,6 @@ import { useToLocalStorage } from '../hooks/useToLocalStorage'
 
 
 
-
-
 const Nav = () => {
 
   const[inputShow, setinputShow] = useState(false)
@@ -157,7 +155,7 @@ const Nav = () => {
   useEffect(() =>{
   
     if( datas.length == 0 ) {
-      console.log('nao há items adicionados ao carrinho')
+      console.log('não há items adicionados ao carrinho')
     }else{
       setShopDatas(datas)
     }

@@ -26,10 +26,6 @@ import { auth } from './firebase/config'
 
 
 
-
-
-
-
 function App() {
   const [user, setUser]  = useState()
  
