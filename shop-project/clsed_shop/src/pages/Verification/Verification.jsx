@@ -18,6 +18,10 @@ const Verification = () => {
     const { datas } = useGetLocalStorage()
 
     const {totalValue} = useTotalValueShop(datas)
+
+    useEffect(() =>{
+        window.scroll(0,0)
+      }, [])
     
     useEffect(() =>{
         setShopDatas(datas)

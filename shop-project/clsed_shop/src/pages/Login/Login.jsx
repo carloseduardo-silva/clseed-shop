@@ -24,13 +24,20 @@ const Login = () => {
     e.preventDefault()
     setError('')
 
-    const user ={
-      email,
-      password,
+    if(email && password){
+      const user ={
+        email,
+        password,
+      }
+  
+      const res = await login(user)
+      setError(authError)
+    }
+    else{
+      setError("Preencha os campos corretamente")
     }
 
-    const res = await login(user)
-    setError(authError)
+
     
 
   }
@@ -51,7 +58,7 @@ const Login = () => {
         <input onChange={(e) =>{setPassword(e.target.value)}} name='password' placeholder="Digite sua senha" type="password" />
 
 
-        <button type='submit'>Entrar</button>
+        <button disabled={loading ? true : false} type='submit'>{loading ? "Carregando..." : "Entrar" } </button>
         <Link to={'/register'}> <span> Criar Conta</span></Link>
         {error && <p className='error'>{error}</p>}
       </form>

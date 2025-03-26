@@ -36,6 +36,10 @@ const { section } = useParams()
 
 
 //UseEffects
+useEffect(() =>{
+  window.scroll(0,0)
+}, [])
+
 
 useLayoutEffect(() =>{
 

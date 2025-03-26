@@ -43,9 +43,14 @@ const Product = () => {
 
    
     useEffect(() =>{
+      window.scroll(0,0)
+    }, [])
+
+    useEffect(() =>{
       setImagesArr(data.CarrouselIMG)
       
     })
+
 
     //get datas already saved in localStorage
     const {datas} = useGetLocalStorage()

@@ -34,6 +34,9 @@ const Search = () => {
 
   const {datas, loading, error } = useFetchDatas('products', search )
 
+  useEffect(() =>{
+    window.scroll(0,0)
+  }, [])
 
   useEffect(() =>{
     if(search){

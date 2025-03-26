@@ -48,6 +48,10 @@ const Home = () => {
             },
             },
         };
+
+    useEffect(() =>{
+        window.scroll(0,0)
+        }, [])
     
     //carrousel de imagens banner home
     useEffect(() =>{

@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     margin:0em 2em 4em 2em;
-    gap: 5em;
+    gap: 2em;
     
 }
 
@@ -14,8 +14,8 @@
     align-items: center;
     justify-content: space-between; 
     background-color: rgb(244, 244, 244);
-    height: 85vh;
-    padding: 0px 3px;
+    padding: 10px 3px 0px;
+    border-radius: 3px;
 }
 
 .img_container span{
@@ -105,9 +105,7 @@
         margin: 2.25em 1.25em 4em 0em;
         justify-content: start;
         align-items: start;
-        
-      
-        
+        gap: 5rem;
     }
 
     .product_info{
@@ -115,7 +113,7 @@
     }
 
     .img_container{
-        padding: 2em;
+        padding: 1px 1.5em;
         width: 45%;
         justify-content: center;
     }

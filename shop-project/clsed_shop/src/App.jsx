@@ -32,6 +32,7 @@ function App() {
   const loadingUser = user === undefined
 
 
+
   useEffect(()=>{
     onAuthStateChanged(auth, (user) =>{
       setUser(user)

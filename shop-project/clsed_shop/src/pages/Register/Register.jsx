@@ -26,19 +26,23 @@ const Register = () => {
         e.preventDefault()
         setError('')
 
-        const user = {
-            name,
-            email,
-            password,
-
-        }
-
+       
         if(password !== confirmPassword){
             setError("As senhas precisam ser iguais!")
             return 
         }
 
+       if(name && email && password && confirmPassword){
+        const user = {
+          name,
+          email,
+          password,}
+
         const res = await createUser(user)
+       }
+       else{
+        setError("Preencha os campos corretamente")
+       }
 
     }
 
@@ -85,7 +89,7 @@ const Register = () => {
 
 
       {!loading && <>
-      <button className="btn">Criar Conta</button> 
+      <button disabled={loading ? true : false} className="btn">{loading ? "Carregando..." : "Criar Conta" }</button> 
       <Link to={'/login'}>Voltar</Link>
       </>
       }
