@@ -567,7 +567,7 @@ a{
 
   .NotFound_product{
     margin: auto;
-    animation: notFound 3.5s;
+    animation: notFound 3s;
   }
 
   .filterOn{

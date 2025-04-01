@@ -57,7 +57,7 @@ const Search = () => {
     
     setLoad(loading)
    
-  })
+  }, [loading])
 
   //setting datas from hook
   useEffect(() =>{

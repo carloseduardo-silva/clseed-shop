@@ -101,6 +101,11 @@
     margin-top: 5px;
 }
 
+.loadingImg{
+ width:350px;
+ height:500px;
+}
+
 
 @media (min-width:600px) {
     .img_container img{
@@ -166,6 +171,11 @@
         width:480px;
         
     }
+
+    .loadingImg{
+        width:480px;
+        height:500px;
+       }
     
 }
 

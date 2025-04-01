@@ -194,7 +194,7 @@ const Product = () => {
         <div className={styles.product_container}> 
         
           <div className={styles.img_container}>
-              <span onClick={() => previousImage()} class="material-symbols-outlined back">arrow_back</span>
+              {image && <span onClick={() => previousImage()} class="material-symbols-outlined back">arrow_back</span>}
 
               {carrouselShow && <AnimatePresence>
                 <motion.img 
@@ -205,10 +205,10 @@ const Product = () => {
               exit="exit" 
               src={imagesArr[currentIndex]} alt="camiseta" /> 
               </AnimatePresence> }
-              {!carrouselShow && <img src={image} alt="camiseta" />}
-              {!image && <p>Carregando imagem...</p>}
+              {!carrouselShow && image && <img src={image} alt="camiseta" />}
+              {!image && <div className={styles.loadingImg} ></div>}
 
-              <span onClick={() => nextImage()} class="material-symbols-outlined forward">arrow_forward</span>
+              {image && <span onClick={() => nextImage()} class="material-symbols-outlined forward">arrow_forward</span>}
 
           </div>
 
