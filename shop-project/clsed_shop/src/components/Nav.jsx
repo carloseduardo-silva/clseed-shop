@@ -56,7 +56,15 @@ const Nav = () => {
   }, [inputShow])
  
  
-  
+  //body class transparent escape area
+  useEffect(() => {
+    document.body.addEventListener('click', (e) =>{
+      if(e.target.classList.contains("transparent")){
+        setinputShow(false)
+      }
+    })
+    
+  }, [])
 
 
   //signOut

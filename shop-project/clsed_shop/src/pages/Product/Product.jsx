@@ -243,10 +243,11 @@ const Product = () => {
                   <input onChange={(e) => setAmount(e.target.value)} min={0} type="number" name="amount" id="amount" />
                 </label>
 
-                <button value='buyNow' className={styles.buyNow} type='submit'>Compre já</button>
-
-                <button value='addShop' className={styles.addShop} type='submit'>Adicionar ao carrinho</button>
-                {validateError && <p> {validateError}</p>}
+                <div className={styles.button_container}>
+                  <button value='buyNow' className={styles.buyNow} type='submit'>Compre já</button>
+                  <button value='addShop' className={styles.addShop} type='submit'>Adicionar ao carrinho</button>
+                  {validateError && <p> {validateError}</p>}
+                </div>
 
                 </form>
 

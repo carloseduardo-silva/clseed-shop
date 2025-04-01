@@ -21,6 +21,12 @@ const Home = () => {
 
     const {datas, loading, error} = useFetchDatas('products')
 
+    //scrollar para o topo ao carregar a pagina
+    useEffect(() =>{
+        window.scroll(0,0)
+        }, [])
+    
+
     //carrousel slides
     const slideVariants = {
             hiddenRight: {
@@ -49,11 +55,8 @@ const Home = () => {
             },
         };
 
-    useEffect(() =>{
-        window.scroll(0,0)
-        }, [])
-    
-    //carrousel de imagens banner home
+
+    //Imagens para BannerHome
     useEffect(() =>{
         setImagesArr(['https://cdn.vox-cdn.com/thumbor/Gzz0B3GqZRXvAqphlWA5pUifZGM=/88x0:1509x1066/1200x675/filters:focal(88x0:1509x1066)/cdn.vox-cdn.com/uploads/chorus_image/image/50128435/wmns9.0.0.jpg',
         "https://uncoverla.sfo3.digitaloceanspaces.com/wp-content/uploads/2019/10/29125942/fred-segal-stadium-goods-pop-up-west-hollywood_2019_10_02-scaled.jpg",
@@ -105,12 +108,6 @@ const Home = () => {
         );}
     
 
-    function previousImage(){
-
-    setDirection("right");
-    setCurrentIndex((prevIndex) =>
-    prevIndex - 1 < 0 ? imagesArr.length - 1 : prevIndex - 1
-    );}
       
 
  
@@ -120,7 +117,7 @@ const Home = () => {
 
         <div className={styles.advertisement_container}>
 
-            <span onClick={() => previousImage()} class="material-symbols-outlined back">arrow_back</span>
+            <span class="material-symbols-outlined back"></span>
 
             <AnimatePresence>
                 <motion.img 

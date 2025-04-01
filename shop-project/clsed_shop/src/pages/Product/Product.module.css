@@ -48,16 +48,22 @@
     flex-direction: column;
     gap: 2em;
     max-width: 530px;
+   
 }
 
 .product_info button.buyNow {
+    font-family: 'Schibsted Grotesk';
     display: flex;
+    justify-content: center;
     background-color: black;
     color: white;
-    padding: 1em 1.5em;
+    padding: 1.3em 1.5em;
     border-radius: 18px;
-    margin: 10px 0px;
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
     border-color: black;
+    font-size: 15px;
 }
 
 .product_info button.buyNow:hover{
@@ -67,19 +73,32 @@
 }
 
 .product_info button.addShop {
+    font-family: 'Schibsted Grotesk';
     display: flex;
+    justify-content: center;
     background-color: rgb(253, 253, 253);
     color: rgb(0, 0, 0);
-    padding: 1em 1.5em;
+    padding: 1.3em 1.5em;
     border-radius: 18px;
-    margin: 10px 0px;
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
     border-color: black;
+    font-size: 15px;
 }
 
 .product_info button.addShop:hover{
     background-color: rgb(227, 227, 227);
     transition: 250ms;
     cursor: pointer;
+}
+
+.button_container{
+    display: flex ;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 5px;
 }
 
 
@@ -95,7 +114,32 @@
     .product_container {
         margin: 0px 0px 4em 0px;
     }
+
+    .button_container{
+        flex-direction: row;
+        width: 100%;
+        gap: 1rem;
+    }
+    .product_info button.addShop {
+        padding: 1em 1.25em;
+        border-radius: 18px;
+        width: 100%;
+        text-align: center;
+        margin: 10px auto;
+        font-size: 16px;
+       
+    }
     
+    .product_info button.buyNow {
+       
+        padding: 0.9em 1.25em;
+        border-radius: 18px;
+        width: 100%;
+        text-align: center;
+        margin: 10px auto;
+        font-size: 17px;
+       
+    }
 }
 
 
