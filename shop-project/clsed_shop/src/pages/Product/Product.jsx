@@ -215,7 +215,7 @@ const Product = () => {
           <div className={styles.product_info}>
                 <div className={styles.product_header}>
                   <h2> {data.name}</h2>
-                  <span>R${data.price},00</span>
+                  <span>{loading ? "": `R$${data.price},00`}</span>
                 </div>
 
                 <div className={styles.product_description}>

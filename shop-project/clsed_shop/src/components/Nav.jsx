@@ -191,7 +191,9 @@ const Nav = () => {
               </div>
 
               <div className={styles.utilities_card}>
-                <p> Ajuda </p> 
+                <Link to={"/help"}>
+                  <p> Ajuda </p> 
+                </Link>
               </div>
 
             </div>

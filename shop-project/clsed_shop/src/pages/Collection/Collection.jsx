@@ -392,7 +392,8 @@ const handleFilterPrice = (e) =>{
 
         {/* Products */}
         <div className={styles.productsQuery_container}>
-          {shopDatas.length == 0 && <p>Carregando produtos...</p>}
+          {loading && <p style={{fontWeight:"bold", fontSize:"20px"}}>Carregando produtos...</p>}
+          {shopDatas.length == 0 && !loading && <p style={{fontWeight:"bold", fontSize:"20px"}}>Não foi encontrado produtos com essa faixa de preço...</p>}
           {shopDatas.length > 0 &&  shopDatas.map((product) =>(
             <Link to={`/products/${product.idProduct}`} className={styles.product_Card}  id='productCard' data-id={product.idProduct}>
               <div  key={product.idProduct}>

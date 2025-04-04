@@ -19,6 +19,7 @@ import Search from './pages/Search/Search'
 import Cart from './pages/Cart/Cart'
 import Verification from './pages/Verification/Verification'
 import Collection from './pages/Collection/Collection'
+import  Help  from './pages/Help/Help'
 
 //components
 import Footer from './components/Footer'
@@ -48,13 +49,14 @@ function App() {
   return (
     <>
     <AuthContextProvider value={{user}}>
-     
+      
         <BrowserRouter>
 
           <Routes>
               <Route path='/' element={<Home/>}></Route>
               <Route path='/register' element={!user ? <Register/> : <Navigate to={'/'} /> }></Route>
               <Route path='/login' element={!user ? <Login/> : <Navigate to={'/'} /> }></Route>
+              <Route path='/help' element={user ? <Help  /> : <Navigate to={'/login'} /> }></Route>
               <Route path='/products/:id' element={user ? <Product/> : <Navigate to={'/login'} /> }></Route>
               <Route path='/collection/:section' element={user ? <Collection/> : <Navigate to={'/login'} /> }></Route>
               <Route path='/search' element={user ? <Search/> : <Navigate to={'/login'} /> }></Route>
@@ -62,9 +64,7 @@ function App() {
               <Route path='/verification' element={user ? <Verification/> : <Navigate to={'/login'} /> }></Route>
               
           </Routes>
-          
-        
-        
+            
         </BrowserRouter>
        
       
