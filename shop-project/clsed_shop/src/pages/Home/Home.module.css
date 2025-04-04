@@ -152,21 +152,6 @@ a{
 }
 
 
-@media (min-height: 825px) {
-
-    .advertisement_container::after{
-        height: 96%;
-    }
-    
-}
-
-@media (min-height: 915px) {
-
-    .advertisement_container::after{
-        height: 95%;
-    }
-    
-}
 
 @media (min-width:944px) {
     .shop_container{
